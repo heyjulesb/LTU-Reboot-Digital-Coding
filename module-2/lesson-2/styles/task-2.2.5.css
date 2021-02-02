@@ -4,8 +4,19 @@
   color: red;
 }
 
+#paragraph-tag {
+  color: red;
+}
+
+
 .font-blue {      /* This is a class */
   color: blue;
+}
+
+.list-container {
+  padding: 30px;
+  background: yellow;
+  border: 1px solid blue;
 }
 
 /* Your code goes above here */
