@@ -1,9 +1,9 @@
 a:link {
-  color: green;
+  color: rgb(23, 0, 128);
 }
 
 a:visited {
-  color: red;
+  color: rgba(199, 167, 25, 0.336);
 }
 
 a:hover {
@@ -12,10 +12,10 @@ a:hover {
 }
 
 a:focus {
-  color: orange;
+  color: red
   font-size: 32px;
 }
 
 a:active {
-  color: pink;
+  color: rgb(77, 5, 87);
 }
