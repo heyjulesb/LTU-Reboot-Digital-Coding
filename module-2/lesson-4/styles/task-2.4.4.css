@@ -1,0 +1,21 @@
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper figcaption {
+    background-color: teal;
+    border: white solid 3px;
+    font-size: 24px;
+    color: white;
+    display: inline-block;
+    padding: 15px 30px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
