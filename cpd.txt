@@ -1,18 +1,26 @@
 CPD - Continuing Professional Development
 
-
 Date of CPD activity
-
+4th Feb 2021
 
 CPD activity
-Introduction to Web Development
+
+Positioning and Layout
 
 
 What have I learnt?
 
+In this session, we was taught about the different positioning and layout within HTML and CSS.
+I also learnt more about margins, borders and padding which is something I always found hard to understand.
+
 
 How did I use this in practice?
 
+We added an image to our html page and positioned the caption to the image on the image.
 
 
 What did I find hard?
+
+I will need to play around with the absolute and relative positioning to understand how it can affect other elements.
+
+
