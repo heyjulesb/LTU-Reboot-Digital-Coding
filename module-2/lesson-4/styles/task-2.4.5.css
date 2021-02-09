@@ -1,0 +1,42 @@
+main img{
+    max-width: 200px;
+    margin: 30px;
+    margin-left: 0;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+nav {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px 10px;
+}
+
+main {
+    float: left;
+    width: calc(66.6666% - 60px);
+    padding: 30px;
+}
+
+aside {
+    float: left;
+    width: calc(33.3333% - 60px);
+    padding: 30px;
+}
+
+footer {
+    text-align: center;
+}
