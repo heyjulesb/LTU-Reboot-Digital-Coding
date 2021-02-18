@@ -8,8 +8,8 @@ function percentageCalculator(number, percentage){
     };
 
     if(blnValidated) {
-        onePercent = number / 100;
-        totalPercent = onePercent * percentage;
+        var onePercent = number / 100;
+        var totalPercent = onePercent * percentage;
         return totalPercent;
     } else {
         console.log('Both arguments need to be a number');
