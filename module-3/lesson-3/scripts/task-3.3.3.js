@@ -26,23 +26,23 @@ function calculator(number1, number2, operator){
     switch(operator){
         case '+':
             sum = number1 + number2;
-            message = `${number1} ${operator} ${number2} = ${sum}`
+            message = `The sum is: ${number1} ${operator} ${number2} = ${sum}`
         break;
         case '-':
             sum = number1 - number2;
-            message = `${number1} ${operator} ${number2} = ${sum}`
+            message = `The sum is: ${number1} ${operator} ${number2} = ${sum}`
         break;
         case '*':
             sum = number1 * number2;
-            message = `${number1} ${operator} ${number2} = ${sum}`
+            message = `The sum is: ${number1} ${operator} ${number2} = ${sum}`
         break;
         case '/':
             sum = number1 / number2;
-            message = `${number1} ${operator} ${number2} = ${sum}`
+            message = `The sum is: ${number1} ${operator} ${number2} = ${sum}`
         break;
         case '%':
             sum = number1 % number2;
-            message = `${number1} ${operator} ${number2} = ${sum}`
+            message = `The sum is: ${number1} ${operator} ${number2} = ${sum}`
         break;
     }
     return message;
@@ -50,8 +50,28 @@ function calculator(number1, number2, operator){
 }
 
 // choose two numbers and an arithmatic operator
-calculation = calculator(10, 10, '+');
+var calculation = calculator(10, 10, '+');
 console.log(calculation);
 
-calculation = calculator(20, 10, '-');
+var calculation = calculator(20, 10, '-');
 console.log(calculation);
+
+// function isSymmetrical(num) {
+// 	var convertNumToString = num.toString();
+//     console.log(convertNumToString);
+// 	var reverseString = convertNumToString.split("").reverse().join("");
+//     console.log(reverseString);
+// 	var stringToNum = Number(reverseString);
+//     console.log(stringToNum);
+// 	if (num === stringToNum) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+
+// var symNum = isSymmetrical(66566);
+// console.log(symNum);
+
+// var symNum = isSymmetrical(9956);
+// console.log(symNum);
