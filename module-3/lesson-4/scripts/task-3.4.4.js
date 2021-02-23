@@ -17,6 +17,7 @@ var objRecipe = {
 
 console.log(objRecipe.recipeTitle);
 console.log(objRecipe.servings);
+console.log(objRecipe.ingredients[2]);
 
 for (var counter = 0; counter < objRecipe.ingredients.length; counter++){
     let ingredient = objRecipe.ingredients[counter];
