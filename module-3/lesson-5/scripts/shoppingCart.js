@@ -77,7 +77,3 @@ function getTotalPrice(arrShoppingCart){
 
 let cartTotal = getTotalPrice(arrShoppingCart);
 console.log(cartTotal);
-
-// for (var counter = 0; counter < objRecipe.ingredients.length; counter++){
-//   let ingredient = objRecipe.ingredients[counter];
-//   console.log(ingredient);
