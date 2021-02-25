@@ -60,20 +60,36 @@ let arrShoppingCart = [
   price:.4
 }];
 
-function getTotalPrice(arrShoppingCart){
+function getTotalPrice(arrShoppingCart = [], objCoupon = {}){
   let total = 0;
   let itemPrice = 0;
 
   for(var counter = 0; counter < arrShoppingCart.length; counter++) {
     var objItem = arrShoppingCart[counter];
-    console.log(objItem);
+    //console.log(objItem);
     itemPrice = parseFloat(objItem.quantity) * parseFloat(objItem.price);
-    console.log(objItem);
+    //console.log(objItem);
+    if(objCoupon && objCoupon.type == 'percentage'){
+      if(objCoupon.category == objItem.type || objCoupon.category == 'all') {
+        itemPrice = (itemPrice / 100) * (100 - objCoupon.value);
+      // console.log(itemPrice);
+      } 
+    }
     total = total + itemPrice;
-    console.log(total);
+    // console.log(total);
+  }
+  if(objCoupon && objCoupon.type == 'total'){
+  total = total - objCoupon.value;
   }
   return total.toFixed(2);
 }
 
-let cartTotal = getTotalPrice(arrShoppingCart);
+let objCoupon = {
+  name: '20 Percent Off',
+  value: 20,
+  category: 'all',
+  type: 'percentage'
+};
+
+let cartTotal = getTotalPrice(arrShoppingCart, objCoupon);
 console.log(cartTotal);
