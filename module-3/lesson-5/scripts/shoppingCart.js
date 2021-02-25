@@ -64,7 +64,7 @@ function getTotalPrice(arrShoppingCart){
   let total = 0;
   let itemPrice = 0;
 
-  for(var counter = 1; counter < arrShoppingCart.length; counter++) {
+  for(var counter = 0; counter < arrShoppingCart.length; counter++) {
     var objItem = arrShoppingCart[counter];
     console.log(objItem);
     itemPrice = parseFloat(objItem.quantity) * parseFloat(objItem.price);
