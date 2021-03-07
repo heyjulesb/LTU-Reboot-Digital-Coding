@@ -1,0 +1,13 @@
+h1 {
+    color: purple;
+}
+
+img {
+    max-width: 200px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
