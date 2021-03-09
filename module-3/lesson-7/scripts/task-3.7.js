@@ -15,7 +15,7 @@ for (counter = 0; counter < arrAnimalFilters.length; counter++){
 /*-----     Functions     -----*/
 function filterImages(event){
     //console.log(event.target.innerHTML);
-    //changes the button name to lower case letter
+    //changes the button name to lower case letters
     var animalName = event.target.innerHTML.toLowerCase();
     //console.log(animalName);
     for (counter = 0; counter < arrAnimalImages.length; counter++){
@@ -25,7 +25,7 @@ function filterImages(event){
         if(animalName == 'all'){
             currentImage.style.display = 'inline';
         } else {
-            //this c
+            //this variable checks that it equals to the image attribute 'animal'
             let currentImageAnimal = currentImage.getAttribute('animal');
             //console.log(currentImageAnimal);
             if (currentImageAnimal == animalName) {
